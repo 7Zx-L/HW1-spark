@@ -1,0 +1,65 @@
+WARNING: package jdk.internal.util.random not in java.base
+Jan 22, 2024 1:19:03 AM org.apache.spark.launcher.Log4jHotPatchOption staticJavaAgentOption
+WARNING: spark.log4jHotPatch.enabled is set to true, but /usr/share/log4j-cve-2021-44228-hotpatch/jdk17/Log4jHotPatchFat.jar does not exist at the configured location
+
+24/01/22 01:19:17 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/01/22 01:19:18 WARN DependencyUtils: Skip remote jar s3://cs6240-hw1-spark-bucket/spark-demo.jar.
+24/01/22 01:19:18 INFO DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at ip-172-31-82-255.ec2.internal/172.31.82.255:8032
+24/01/22 01:19:21 INFO Configuration: resource-types.xml not found
+24/01/22 01:19:21 INFO ResourceUtils: Unable to find 'resource-types.xml'.
+24/01/22 01:19:21 INFO Client: Verifying our application has not requested more than the maximum memory capability of the cluster (6144 MB per container)
+24/01/22 01:19:21 INFO Client: Will allocate AM container, with 2432 MB memory including 384 MB overhead
+24/01/22 01:19:21 INFO Client: Setting up container launch context for our AM
+24/01/22 01:19:21 INFO Client: Setting up the launch environment for our AM container
+24/01/22 01:19:21 INFO Client: Preparing resources for our AM container
+24/01/22 01:19:21 WARN Client: Neither spark.yarn.jars nor spark.yarn.archive is set, falling back to uploading libraries under SPARK_HOME.
+24/01/22 01:19:45 INFO Client: Uploading resource file:/mnt/tmp/spark-f0a296d8-0a11-4802-b94e-32aea90ec282/__spark_libs__8390346090992156356.zip -> hdfs://ip-172-31-82-255.ec2.internal:8020/user/hadoop/.sparkStaging/application_1705886244165_0001/__spark_libs__8390346090992156356.zip
+24/01/22 01:19:52 INFO ClientConfigurationFactory: Set initial getObject socket timeout to 2000 ms.
+24/01/22 01:19:52 INFO Client: Uploading resource s3://cs6240-hw1-spark-bucket/spark-demo.jar -> hdfs://ip-172-31-82-255.ec2.internal:8020/user/hadoop/.sparkStaging/application_1705886244165_0001/spark-demo.jar
+24/01/22 01:19:54 INFO S3NativeFileSystem: Opening 's3://cs6240-hw1-spark-bucket/spark-demo.jar' for reading
+24/01/22 01:19:54 INFO Client: Uploading resource file:/etc/hudi/conf.dist/hudi-defaults.conf -> hdfs://ip-172-31-82-255.ec2.internal:8020/user/hadoop/.sparkStaging/application_1705886244165_0001/hudi-defaults.conf
+24/01/22 01:19:55 INFO Client: Uploading resource file:/mnt/tmp/spark-f0a296d8-0a11-4802-b94e-32aea90ec282/__spark_conf__14166353574998248989.zip -> hdfs://ip-172-31-82-255.ec2.internal:8020/user/hadoop/.sparkStaging/application_1705886244165_0001/__spark_conf__.zip
+24/01/22 01:19:56 INFO SecurityManager: Changing view acls to: hadoop
+24/01/22 01:19:56 INFO SecurityManager: Changing modify acls to: hadoop
+24/01/22 01:19:56 INFO SecurityManager: Changing view acls groups to: 
+24/01/22 01:19:56 INFO SecurityManager: Changing modify acls groups to: 
+24/01/22 01:19:56 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: hadoop; groups with view permissions: EMPTY; users with modify permissions: hadoop; groups with modify permissions: EMPTY
+24/01/22 01:19:56 INFO Client: Submitting application application_1705886244165_0001 to ResourceManager
+24/01/22 01:19:57 INFO YarnClientImpl: Submitted application application_1705886244165_0001
+24/01/22 01:19:58 INFO Client: Application report for application_1705886244165_0001 (state: ACCEPTED)
+24/01/22 01:19:58 INFO Client: 
+	 client token: N/A
+	 diagnostics: [Mon Jan 22 01:19:57 +0000 2024] Application is Activated, waiting for resources to be assigned for AM.  Details : AM Partition = <DEFAULT_PARTITION> ; Partition Resource = <memory:12288, vCores:8> ; Queue's Absolute capacity = 100.0 % ; Queue's Absolute used capacity = 0.0 % ; Queue's Absolute max capacity = 100.0 % ; Queue's capacity (absolute resource) = <memory:12288, vCores:8> ; Queue's used capacity (absolute resource) = <memory:0, vCores:0> ; Queue's max capacity (absolute resource) = <memory:12288, vCores:8> ; 
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1705886396605
+	 final status: UNDEFINED
+	 tracking URL: http://ip-172-31-82-255.ec2.internal:20888/proxy/application_1705886244165_0001/
+	 user: hadoop
+24/01/22 01:20:19 INFO Client: Application report for application_1705886244165_0001 (state: RUNNING)
+24/01/22 01:20:19 INFO Client: 
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: ip-172-31-92-202.ec2.internal
+	 ApplicationMaster RPC port: 39255
+	 queue: default
+	 start time: 1705886396605
+	 final status: UNDEFINED
+	 tracking URL: http://ip-172-31-82-255.ec2.internal:20888/proxy/application_1705886244165_0001/
+	 user: hadoop
+24/01/22 01:20:45 INFO Client: Application report for application_1705886244165_0001 (state: FINISHED)
+24/01/22 01:20:45 INFO Client: 
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: ip-172-31-92-202.ec2.internal
+	 ApplicationMaster RPC port: 39255
+	 queue: default
+	 start time: 1705886396605
+	 final status: SUCCEEDED
+	 tracking URL: http://ip-172-31-82-255.ec2.internal:20888/proxy/application_1705886244165_0001/
+	 user: hadoop
+24/01/22 01:20:45 INFO ShutdownHookManager: Shutdown hook called
+24/01/22 01:20:45 INFO ShutdownHookManager: Deleting directory /mnt/tmp/spark-f0a296d8-0a11-4802-b94e-32aea90ec282
+24/01/22 01:20:45 INFO ShutdownHookManager: Deleting directory /mnt/tmp/spark-946266a9-7849-46e7-bdab-370f0b6ec70f
+Command exiting with ret '0'
